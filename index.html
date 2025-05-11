@@ -1,63 +1,78 @@
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Pizza Gallery</title>
+    <title>My Web Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
     <header>
-        <h1>Pizza Gallery</h1>
+        <h1 id="home"> Чарівна країна </h1>
+<section style="padding: 40px; background: rgba(0,0,0,0.3); border-radius: 30px; margin: 40px auto; width: 70%; text-align: center;">
+  <p style="font-size: 30px; color: rgb(228, 221, 123); font-style: italic;">
+    "Магія — це не тільки сила, а й велика відповідальність."
+  </p>
+</section>
+        <nav class="navigation">
+            <a href="#home" class="navigation">Головна</a>
+            <a href="#about" class="navigation">Послуги</a>
+            <a href="#services" class="navigation">Правила</a>
+            <a href="#contact" class="navigation">Про розробників</a>
+        </nav>
     </header>
-
-    <section class="gallery">
-        <div class="pizza-item">
-            <img src="pizza1.jpg" alt="Pepperoni Pizza">
-            <h3>Pepperoni Pizza</h3>
-        </div>
-
-        <div class="pizza-item">
-            <img src="pizza2.jpg" alt="Margherita Pizza">
-            <h3>Margherita Pizza</h3>
-        </div>
-
-        <!-- Add more pizza items as needed -->
-
-    </section>
+ <main>   
+     <p class = "rulese" id="about">Чарівна країна</p>
+    <p>Вас вітає чарівний ліс</p>
+    <p>місто Чарівної країни</p>
+        <div class="button"><a href="#home"><img src="https://i.postimg.cc/tCqrDJnn/download-removebg-preview.png"></a></div>
+        <p class="rules2">Правила</p>
+    <div class="rules" ><p>1.Володіти магією повинен кожен громадянин.</p>
+       <p>2. Ви повинні володіти світлою магією, ніякому разі не чорною</p>
+       <p>3. Ставиться до людей с повагою та любов'ю.</p>
+       <p>4. Допомати одне одному якщо щось не виходить.</p>
+       <p>5. Ніколи, ніколи не виходьте з лісу. Якщо хочете бути магом, або ж володіти хоча б початковою магією не покидайте ліс, не при яких обставинах.</p>
+       <p>6. Вирубка лісу заборонена, тому що ці дерева зроблені з магії. Якщо ви дуже хочете то можете, але відповідальність ми за вас не несемо.</p> </div>
+<section style="padding: 40px; text-align: center;">
+  <h2 style="font-size: 45px; color: #238c74;">Розклад занять</h2>
+  <table style="margin: 20px auto; border-collapse: collapse; font-size: 22px; color: white;">
+    <tr style="background-color: #139443;">
+      <th style="padding: 10px 20px;">День</th>
+      <th style="padding: 10px 20px;">Предмет</th>
+      <th style="padding: 10px 20px;">Час</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px 20px;">Понеділок</td>
+      <td style="padding: 10px 20px;">Зіллєваріння</td>
+      <td style="padding: 10px 20px;">10:00 - 11:30</td>
+    </tr>
+    <tr style="background-color: rgba(35,140,116,0.2);">
+      <td style="padding: 10px 20px;">Вівторок</td>
+      <td style="padding: 10px 20px;">Магія природи</td>
+      <td style="padding: 10px 20px;">12:00 - 13:30</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px 20px;">Середа</td>
+      <td style="padding: 10px 20px;">Тренування заклять</td>
+      <td style="padding: 10px 20px;">14:00 - 15:30</td>
+    </tr>
+  </table>
+<section style="padding: 40px; text-align: center;">
+  <h2 style="font-size: 45px; color: #238c74;">Відгуки</h2>
+  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px;">
+    <div style="width: 300px; background: rgba(35,140,116,0.1); border-radius: 15px; padding: 20px;">
+      <p style="font-size: 20px;">"Це найкращий магічний ліс у всьому світі!"</p>
+      <p style="font-size: 16px; color: #ccc;">– Аріна, чарівниця</p>
+    </div>
+    <div style="width: 300px; background: rgba(35,140,116,0.1); border-radius: 15px; padding: 20px;">
+      <p style="font-size: 20px;">"Тут я навчився викликати світлячків!"</p>
+      <p style="font-size: 16px; color: #ccc;">– Тимофій, учень</p>
+    </div>
+  </div>
+</section>
+</section>
+ </main>
+    <footer id="contact">
+        <p>Розробники</p>
+    Чернишов Оскар
+    Король Семен
+    </footer>
 </body>
-
 </html>
-styles.css:
-
-css
-Copy code
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 2em;
-}
-
-.pizza-item {
-    margin: 1em;
-    text-align: center;
-}
-
-.pizza-item img {
-    max-width: 100%;
-    border-radius: 8px;
